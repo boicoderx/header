@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        .main-nav{
+            padding: 10px 20px;
+        }
+        .main-nav ul{
+            display: flex;
+            list-style-type: none;
+            margin-left: 5px;
+        }
+        .main-nav ul li{
+            margin-left: 5px;
+        }
+        .main-nav .dropdown{
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-nav .drop-items:hover .dropdown{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main-nav"> 
+        <ul class="nav-items">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li class="drop-items"><a href="">Help</a>
+                <div class="dropdown">
+                    <a href="">Item 10</a>
+                    <a href="">Item 11</a>
+                    <a href="">Item 12</a>
+                </div>
+            </li>
+            <li class="drop-items"><a href="">Contact</a>
+                <div class="dropdown">
+                    <a href="">Item 1</a>
+                    <a href="">Item 2</a>
+                    <a href="">Item 3</a>
+                </div>
+            </li>
+        </ul>
+
+    </nav>
+</body>
+</html>

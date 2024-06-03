@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header bar</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        header{
+            display: flex;
+            padding: 10px 20px;
+            justify-content: space-between;
+            background-color: aqua;
+        }
+        header .header-logo{
+            display: flex;
+        }
+        header .header-logo h2{
+            font-size: 1rem;
+            color: #505F98;
+            margin-top: 10px;
+        }
+        header .header-links{
+            margin-top: 10px;
+        }
+        header .header-links a{
+            margin-left: 10px;
+            color: #505F98;
+            text-decoration: none;
+        }
+        header .header-button button{
+            color: white;
+            background-color: #505F98;
+            /* font-size: ;  */
+            padding: 5px 25px;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="/images/shopping-bag.png" alt="" height="40" width="40">
+            <h2>Underscore</h2>
+        </div>
+        <div class="header-links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="header-button">
+            <button>login</button>
+        </div>
+
+    </header>
+</body>
+</html>
